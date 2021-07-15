@@ -64,12 +64,11 @@ void Principal::limpiar()
     ui->inDireccion->clear();
     informacion.clear();
     ui->outAdvertencia->clear();
-        ui->outDetalle->setRowCount(0);
-        m_subtotal = 0;
-        ui->outSubtotal->setText("$ " + QString::number(m_subtotal, 'f', 2));
-        ui->outIva->setText("$ " + QString::number(0.0, 'f', 2));
-
-        ui->outTotal->setText("$ " + QString::number(0.0, 'f', 2));
+    ui->outDetalle->setRowCount(0);
+    m_subtotal = 0;
+    ui->outSubtotal->setText("$ " + QString::number(m_subtotal, 'f', 2));
+    ui->outIva->setText("$ " + QString::number(0.0, 'f', 2));
+    ui->outTotal->setText("$ " + QString::number(0.0, 'f', 2));
 }
 
 
